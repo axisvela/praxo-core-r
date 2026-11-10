@@ -1,0 +1,14 @@
+Package: praxocore
+Type: Package
+Title: PRAXO-CORE Contract
+Version: 0.5.0
+Authors@R: person("AxisVela", role = c("aut", "cre"), email = "releases@axisvela.com")
+Description: R implementation of the PRAXO-CORE contract: tool calls, JSON
+    Schema subset, plugin manifests, memory, events, checkpoint envelopes,
+    policy, context, middleware, and the agent loop.
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/axisvela/praxo-core, https://axisvela.github.io/praxo-core/
+BugReports: https://github.com/axisvela/praxo-core/issues
+NeedsCompilation: no
+RoxygenNote: 7.3.2
