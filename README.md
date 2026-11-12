@@ -4,7 +4,7 @@ Dedicated repository for the R implementation of PRAXO-CORE: an
 embeddable, MIT-licensed agent execution kernel with policy controls,
 human-in-the-loop approval, checkpoints, events, and tool calling.
 
-- Package: `praxocore` (`0.6.1`)
+- Package: `praxocore` (`0.7.1`)
 - Registry: r-universe
 - Install: `install.packages("praxocore", repos = "https://axisvela.r-universe.dev")`
 - Documentation: https://axisvela.github.io/praxo-core/languages/r/
