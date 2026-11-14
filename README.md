@@ -8,6 +8,7 @@ human-in-the-loop approval, checkpoints, events, and tool calling.
 - Registry: r-universe
 - Install: `install.packages("praxocore", repos = "https://axisvela.r-universe.dev")`
 - Documentation: https://axisvela.github.io/praxo-core/languages/r/
+- Examples: https://github.com/axisvela/praxo-core-r/tree/main/language/r/examples
 - Mirror repository: https://github.com/axisvela/praxo-core-r
 - Canonical source: https://github.com/axisvela/praxo-core/tree/main/language/r
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
