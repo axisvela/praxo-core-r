@@ -9,9 +9,9 @@ R implementation of the PRAXO-CORE contract.
 | Package | `praxocore` |
 | Registry | [r-universe](https://axisvela.r-universe.dev/praxocore) |
 | Install | `install.packages("praxocore", repos = "https://axisvela.r-universe.dev")` |
-| Source version | `0.9.0` |
+| Source version | `0.10.0` |
 | Published version | `0.9.0` |
-| Source tag | `r/v0.9.0` |
+| Source tag | `r/v0.10.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/r/ |
