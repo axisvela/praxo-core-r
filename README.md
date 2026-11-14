@@ -10,7 +10,7 @@ R implementation of the PRAXO-CORE contract.
 | Registry | [r-universe](https://axisvela.r-universe.dev/praxocore) |
 | Install | `install.packages("praxocore", repos = "https://axisvela.r-universe.dev")` |
 | Source version | `0.9.0` |
-| Published version | `0.7.1` |
+| Published version | `0.9.0` |
 | Source tag | `r/v0.9.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
@@ -36,6 +36,12 @@ Install the published package:
 install.packages("praxocore", repos = "https://axisvela.r-universe.dev")
 ```
 
+```r
+model <- function(request) response(message(roles$assistant, "hello"))
+result <- agent_run(model, "hi")
+cat(result$output)
+```
+
 See the [full R README](language/r/README.md) for complete installation, build, and verification commands.
 
 ## What's included
@@ -58,8 +64,10 @@ Runnable examples live under [`language/r/examples`](language/r/examples).
 | Example | What it shows |
 | --- | --- |
 | [checkpoint](language/r/examples/checkpoint) | This example uses the R Core checkpoint allowlist to encode and decode only registered payload types. |
+| [consumer](language/r/examples/consumer) | This starter installs the published `praxocore` package from r-universe and verifies an allow/deny governed tool path. |
 | [event-sink](language/r/examples/event-sink) | This example uses the R Core sink composition to fan out lifecycle and tool events and filter the tool-only stream. |
 | [identity-policy](language/r/examples/identity-policy) | This example binds a trusted principal to policy decisions and rejects missing, inactive, role-mismatched, and tenant-mismatched actions. |
+| [live-model](language/r/examples/live-model) | This example connects the R Core to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
 | [mcp](language/r/examples/mcp) | This example uses a caller-owned in-process transport with the R MCP client. It covers initialize, `tools/list`, and `tools/call` without a server process. |
 | [provider-fallback](language/r/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary failure when both fail. |
 | [retry](language/r/examples/retry) | This example retries a transient failure with a bounded attempt count and keeps the exhausted failure state. |
