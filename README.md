@@ -10,7 +10,7 @@ R implementation of the PRAXO-CORE contract.
 | Registry | [r-universe](https://axisvela.r-universe.dev/praxocore) |
 | Install | `install.packages("praxocore", repos = "https://axisvela.r-universe.dev")` |
 | Source version | `0.10.1` |
-| Published version | `0.10.0` |
+| Published version | `0.10.1` |
 | Source tag | `r/v0.10.1` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
