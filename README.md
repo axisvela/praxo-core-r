@@ -72,6 +72,7 @@ Runnable examples live under [`language/r/examples`](language/r/examples).
 | [live-model](language/r/examples/live-model) | This example connects the R Core to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
 | [mcp](language/r/examples/mcp) | This example uses a caller-owned in-process transport with the R MCP client. It covers initialize, `tools/list`, and `tools/call` without a server process. |
 | [provider-fallback](language/r/examples/provider-fallback) | This example calls a fallback only after the primary fails and preserves the primary failure when both fail. |
+| [representative-chain](language/r/examples/representative-chain) | This deterministic example exercises the same application seams as the Go representative chain without a live provider or network: |
 | [retry](language/r/examples/retry) | This example retries a transient failure with a bounded attempt count and keeps the exhausted failure state. |
 | [service](language/r/examples/service) | This example defines a transport-neutral request handler boundary with health, principal, and run cases. Wire it into any R HTTP server. |
 | [session-checkpoint](language/r/examples/session-checkpoint) | This example saves and restores a conversation history across two agent turns using the Core checkpoint allowlist. |
