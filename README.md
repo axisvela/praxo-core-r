@@ -63,6 +63,7 @@ Runnable examples live under [`language/r/examples`](language/r/examples).
 
 | Example | What it shows |
 | --- | --- |
+| [advanced-delegation](language/r/examples/advanced-delegation) | This example adds application-level governed delegation checks for the R Core. |
 | [checkpoint](language/r/examples/checkpoint) | This example uses the R Core checkpoint allowlist to encode and decode only registered payload types. |
 | [consumer](language/r/examples/consumer) | This starter installs the published `praxocore` package from r-universe and verifies an allow/deny governed tool path. |
 | [event-sink](language/r/examples/event-sink) | This example uses the R Core sink composition to fan out lifecycle and tool events and filter the tool-only stream. |
