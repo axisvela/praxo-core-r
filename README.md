@@ -1,6 +1,6 @@
 # PRAXO-CORE for R
 
-R implementation of the PRAXO-CORE contract.
+PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its native R Core: an in-process agent loop with tools, policy, events, memory, checkpoints, middleware, and JSON Schema validation, implemented in base R.
 
 ## At a glance
 
