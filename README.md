@@ -49,8 +49,8 @@ See the [full R README](language/r/README.md) for complete installation, build, 
 | Capability | Status | Detail |
 | --- | --- | --- |
 | OpenAI-compatible model | native | `openai_compatible` adapter |
-| Anthropic model | native (transport seam) | `anthropic`; caller may supply `transport` |
-| Gemini model | native (transport seam) | `gemini`; caller may supply `transport` |
+| Anthropic model | native (transport seam) | `anthropic`; caller may supply `transport` ; Anthropic SSE streaming |
+| Gemini model | native (transport seam) | `gemini`; caller may supply `transport`; Gemini SSE streaming |
 | MCP client | native (transport seam) | `mcp_client`; base R needs caller-supplied transport for stdio |
 | Harmovela sink | native | `harmovela_sink` |
 | OpenTelemetry sink | native (transport seam) | `otel_sink`; caller supplies OTLP/HTTP transport |
