@@ -9,9 +9,9 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | Package | `praxocore` |
 | Registry | [r-universe](https://axisvela.r-universe.dev/praxocore) |
 | Install | `install.packages("praxocore", repos = "https://axisvela.r-universe.dev")` |
-| Source version | `0.10.2` |
+| Source version | `0.11.0` |
 | Published version | `0.10.1` |
-| Source tag | `r/v0.10.2` |
+| Source tag | `r/v0.11.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/r/ |
@@ -48,9 +48,9 @@ See the [full R README](language/r/README.md) for complete installation, build, 
 
 | Capability | Status | Detail |
 | --- | --- | --- |
-| OpenAI-compatible model | native | `openai_compatible` adapter |
-| Anthropic model | native (transport seam) | `anthropic`; caller may supply `transport` ; Anthropic SSE streaming |
-| Gemini model | native (transport seam) | `gemini`; caller may supply `transport`; Gemini SSE streaming |
+| OpenAI-compatible model | native | `openai_compatible` adapter; `openai_compatible_streaming_model` reassembles SSE content, tool calls, usage, and finish reason |
+| Anthropic model | native (transport seam) | `anthropic`; caller may supply `transport`; `anthropic_streaming_model` reassembles SSE |
+| Gemini model | native (transport seam) | `gemini`; caller may supply `transport`; SSE streaming |
 | MCP client | native (transport seam) | `mcp_client`; base R needs caller-supplied transport for stdio |
 | Harmovela sink | native | `harmovela_sink` |
 | OpenTelemetry sink | native (transport seam) | `otel_sink`; caller supplies OTLP/HTTP transport |
