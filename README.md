@@ -10,7 +10,7 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | Registry | [r-universe](https://axisvela.r-universe.dev/praxocore) |
 | Install | `install.packages("praxocore", repos = "https://axisvela.r-universe.dev")` |
 | Source version | `0.11.0` |
-| Published version | `0.10.1` |
+| Published version | `0.11.0` |
 | Source tag | `r/v0.11.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
