@@ -12,6 +12,8 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | Source version | `0.11.0` |
 | Published version | `0.11.0` |
 | Source tag | `r/v0.11.0` |
+| Tutorial tag | `r/tutorial/v0.1.0` |
+| Examples tag | `r/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/r/ |
@@ -78,6 +80,26 @@ Runnable examples live under [`language/r/examples`](language/r/examples).
 | [session-checkpoint](language/r/examples/session-checkpoint) | This example saves and restores a conversation history across two agent turns using the Core checkpoint allowlist. |
 | [streaming](language/r/examples/streaming) | This example forwards model deltas through the R Core and checks that the deltas reconstruct the final output. |
 | [structured-output](language/r/examples/structured-output) | This example validates a final JSON answer against a schema and rejects invalid output. |
+
+## Scenario Tutorials
+
+Scenario-oriented tutorials live under `language/r/Tutorial`.
+
+| Path | What it shows |
+| --- | --- |
+| [Tutorial](language/r/Tutorial) | Application tutorials live in `Tutorial/`, alongside focused `language/go/examples/`. |
+| [budget-review](language/r/Tutorial/budget-review) | A bounded first slice of CT-07, not an official audit. It computes budget execution for a fixed synthetic programme, explains a flagged variance and drafts a review-only perform... |
+| [clinical-guidelines](language/r/Tutorial/clinical-guidelines) | Retrieves fixed guideline citations and abstains when evidence is missing. No diagnosis or treatment decision. |
+| [compliance-tracking](language/r/Tutorial/compliance-tracking) | Compares fixed policy versions and drafts review-only remediation. No audit conclusion or submission. |
+| [data-quality](language/r/Tutorial/data-quality) | A native R analytics tutorial. The Agent has one fixed tool, `summarize_dataset`, which computes statistics over a synthetic data frame. The deterministic model returns the comp... |
+| [executive-brief](language/r/Tutorial/executive-brief) | Computes fixed metric deltas and cites them. No causal attribution or action. |
+| [fire-spread](language/r/Tutorial/fire-spread) | A bounded first slice of AE-02, not a fire-warning or dispatch system. It computes fixed weather/fuel spread indicators in native R and drafts a review-only spread report. No op... |
+| [hedge-plan](language/r/Tutorial/hedge-plan) | A bounded first slice of AE-04, not a trading or financial-advice system. It computes fixed farm exposure and scenario margins in native R and drafts a review-only hedging plan.... |
+| [marketing-segmentation](language/r/Tutorial/marketing-segmentation) | A native R Core tutorial for campaign segmentation. It computes per-segment statistics over a fixed customer fixture, identifies the highest-value segment, and drafts a review-o... |
+| [pollution-tracing](language/r/Tutorial/pollution-tracing) | Compares fixed sensor and wind records and drafts investigation hypotheses. No causal or enforcement finding. |
+| [property-forecast](language/r/Tutorial/property-forecast) | A bounded first slice of BE-05, not a valuation or investment-advice system. It computes fixed site metrics in native R, shows forecast assumptions and drafts a review-only fore... |
+| [wealth-analysis](language/r/Tutorial/wealth-analysis) | A native R Core tutorial for review-only portfolio analysis. It computes weighted risk and concentration over a fixed `acct-100` fixture, recommends a rebalance, and drafts a re... |
+| [weather-anomaly](language/r/Tutorial/weather-anomaly) | A bounded first slice of SC-05, not an operational forecast or warning service. It computes fixed time-series anomalies in native R and drafts a review-only notice. No operation... |
 
 ## Verify
 
