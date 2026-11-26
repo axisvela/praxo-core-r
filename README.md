@@ -10,8 +10,9 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its n
 | Registry | [r-universe](https://axisvela.r-universe.dev/praxocore) |
 | Install | `install.packages("praxocore", repos = "https://axisvela.r-universe.dev")` |
 | Source version | `0.12.0` |
-| Published version | `0.11.0` |
-| Source tag | `r/v0.12.0` |
+| Published version | `0.12.0` |
+| Publication status | published on r-universe; CRAN not published |
+| Canonical source tag | [`r/v0.12.0`](https://github.com/axisvela/praxo-core/tree/r/v0.12.0) |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/r/ |
@@ -142,7 +143,7 @@ This mirror contains the language source and the shared `spec/` vectors, so the 
 - Mirror repository: https://github.com/axisvela/praxo-core-r
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
 
-This repository is a discovery mirror of the canonical R source. The monorepo remains the source of truth and the release workflow source.
+This repository is a discovery mirror of the canonical R source. The monorepo remains the source of truth and the release workflow source. The mirror's `main` branch tracks current source, not a release snapshot. Source tags refer to the canonical monorepo and are not necessarily present in this mirror; syncing the branch does not publish mirror tags or registry packages.
 
 PRAXO-CORE is not a hosted model, workflow engine, identity provider, or safety controller. Do not infer exactly-once execution, complete sandbox isolation, production security certification, live-provider behavior, or physical safety from this package.
 
