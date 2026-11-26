@@ -99,6 +99,8 @@ Scenario-oriented tutorials live under `language/r/Tutorial`. Planning context: 
 | [wealth-analysis](language/r/Tutorial/wealth-analysis) | A native R Core tutorial for review-only portfolio analysis. It computes weighted risk and concentration over a fixed `acct-100` fixture, recommends a rebalance, and drafts a re... |
 | [weather-anomaly](language/r/Tutorial/weather-anomaly) | A bounded first slice of SC-05, not an operational forecast or warning service. It computes fixed time-series anomalies in native R and drafts a review-only notice. No operation... |
 
+## Reference Applications
+
 No accepted end-to-end reference application is recorded for this language yet. Candidate goals are tracked in the [Reference Application Portfolio](https://axisvela.github.io/praxo-core/project/roadmap/#reference-application-portfolio).
 
 ## Verify
