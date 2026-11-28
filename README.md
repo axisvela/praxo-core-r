@@ -1,6 +1,6 @@
 # PRAXO-CORE for R
 
-PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its native R Core: an in-process agent loop with tools, policy, events, memory, checkpoints, middleware, and JSON Schema validation, implemented in base R.
+PRAXO-CORE (also written praxocore) is an embeddable, MIT-licensed agent framework. PRAXO-CORE is an embeddable, MIT-licensed agent framework. This package is its native R Core: an in-process agent loop with tools, policy, events, memory, checkpoints, middleware, and JSON Schema validation, implemented in base R.
 
 ## At a glance
 
@@ -87,18 +87,18 @@ Scenario-oriented tutorials live under `language/r/Tutorial`. Planning context: 
 | Path | What it shows |
 | --- | --- |
 | [Tutorial](language/r/Tutorial) | Application tutorials live in `Tutorial/`, alongside focused `language/go/examples/`. |
-| [budget-review](language/r/Tutorial/budget-review) | A bounded first slice of CT-07, not an official audit. It computes budget execution for a fixed synthetic programme, explains a flagged variance and drafts a review-only perform... |
+| [budget-review](language/r/Tutorial/budget-review) | A bounded first slice of CT-07, not an official audit. It computes budget execution for a fixed synthetic programme, explains a flagged variance and drafts a review-only performance finding. No real disbursement data, official audit conclusion or live model. |
 | [clinical-guidelines](language/r/Tutorial/clinical-guidelines) | Retrieves fixed guideline citations and abstains when evidence is missing. No diagnosis or treatment decision. |
 | [compliance-tracking](language/r/Tutorial/compliance-tracking) | Compares fixed policy versions and drafts review-only remediation. No audit conclusion or submission. |
-| [data-quality](language/r/Tutorial/data-quality) | A native R analytics tutorial. The Agent has one fixed tool, `summarize_dataset`, which computes statistics over a synthetic data frame. The deterministic model returns the comp... |
+| [data-quality](language/r/Tutorial/data-quality) | A native R analytics tutorial. The Agent has one fixed tool, `summarize_dataset`, which computes statistics over a synthetic data frame. The deterministic model returns the computed values as a structured report instead of inventing numbers. It does not read arbitrary files, run SQL, execute shell commands or change the dataset. |
 | [executive-brief](language/r/Tutorial/executive-brief) | Computes fixed metric deltas and cites them. No causal attribution or action. |
-| [fire-spread](language/r/Tutorial/fire-spread) | A bounded first slice of AE-02, not a fire-warning or dispatch system. It computes fixed weather/fuel spread indicators in native R and drafts a review-only spread report. No op... |
-| [hedge-plan](language/r/Tutorial/hedge-plan) | A bounded first slice of AE-04, not a trading or financial-advice system. It computes fixed farm exposure and scenario margins in native R and drafts a review-only hedging plan.... |
-| [marketing-segmentation](language/r/Tutorial/marketing-segmentation) | A native R Core tutorial for campaign segmentation. It computes per-segment statistics over a fixed customer fixture, identifies the highest-value segment, and drafts a review-o... |
+| [fire-spread](language/r/Tutorial/fire-spread) | A bounded first slice of AE-02, not a fire-warning or dispatch system. It computes fixed weather/fuel spread indicators in native R and drafts a review-only spread report. No operational warning, evacuation order or firebreak dispatch. |
+| [hedge-plan](language/r/Tutorial/hedge-plan) | A bounded first slice of AE-04, not a trading or financial-advice system. It computes fixed farm exposure and scenario margins in native R and drafts a review-only hedging plan. No futures orders, price lock or advice. |
+| [marketing-segmentation](language/r/Tutorial/marketing-segmentation) | A native R Core tutorial for campaign segmentation. It computes per-segment statistics over a fixed customer fixture, identifies the highest-value segment, and drafts a review-only invite for that segment. The model packages computed evidence rather than inventing segments. This tutorial does not send messages, launch a campaign, read arbitrary data, install packages or call a live model. |
 | [pollution-tracing](language/r/Tutorial/pollution-tracing) | Compares fixed sensor and wind records and drafts investigation hypotheses. No causal or enforcement finding. |
-| [property-forecast](language/r/Tutorial/property-forecast) | A bounded first slice of BE-05, not a valuation or investment-advice system. It computes fixed site metrics in native R, shows forecast assumptions and drafts a review-only fore... |
-| [wealth-analysis](language/r/Tutorial/wealth-analysis) | A native R Core tutorial for review-only portfolio analysis. It computes weighted risk and concentration over a fixed `acct-100` fixture, recommends a rebalance, and drafts a re... |
-| [weather-anomaly](language/r/Tutorial/weather-anomaly) | A bounded first slice of SC-05, not an operational forecast or warning service. It computes fixed time-series anomalies in native R and drafts a review-only notice. No operation... |
+| [property-forecast](language/r/Tutorial/property-forecast) | A bounded first slice of BE-05, not a valuation or investment-advice system. It computes fixed site metrics in native R, shows forecast assumptions and drafts a review-only forecast. No verified probability, return guarantee or personal-location profiling. |
+| [wealth-analysis](language/r/Tutorial/wealth-analysis) | A native R Core tutorial for review-only portfolio analysis. It computes weighted risk and concentration over a fixed `acct-100` fixture, recommends a rebalance, and drafts a review-only proposal that executes no trades. The model packages computed evidence instead of inventing numbers. This tutorial does not trade, transfer cash, use market data, read arbitrary files or call a live model. |
+| [weather-anomaly](language/r/Tutorial/weather-anomaly) | A bounded first slice of SC-05, not an operational forecast or warning service. It computes fixed time-series anomalies in native R and drafts a review-only notice. No operational forecast, warning issuance or disaster dispatch. |
 
 ## Reference Applications
 
@@ -115,6 +115,11 @@ Rscript r\tests\run_tests.R
 ```
 
 This mirror contains the language source and the shared `spec/` vectors, so the implementation can be built and tested here. See [`language/r/README.md`](language/r/README.md) for the exact commands. The monorepo CI runs conformance, API snapshot, and native tests for this implementation.
+
+## Boundaries
+
+Reference application source is not end-to-end portfolio acceptance; follow each README's scope and evidence.
+PRAXO-CORE is not a hosted model, workflow engine, identity provider, or safety controller. Do not infer exactly-once execution, complete sandbox isolation, production security certification, live-provider behavior, or physical safety from this package.
 
 ## Community
 
@@ -145,6 +150,5 @@ This mirror contains the language source and the shared `spec/` vectors, so the 
 
 This repository is a discovery mirror of the canonical R source. The monorepo remains the source of truth and the release workflow source. The mirror's `main` branch tracks current source, not a release snapshot. Source tags refer to the canonical monorepo and are not necessarily present in this mirror; syncing the branch does not publish mirror tags or registry packages.
 
-PRAXO-CORE is not a hosted model, workflow engine, identity provider, or safety controller. Do not infer exactly-once execution, complete sandbox isolation, production security certification, live-provider behavior, or physical safety from this package.
 
 MIT licensed.
